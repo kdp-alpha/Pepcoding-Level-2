@@ -1,3 +1,6 @@
+//tc = n log(log(n))
+
+
 import java.util.*;
 
 public class Main {
