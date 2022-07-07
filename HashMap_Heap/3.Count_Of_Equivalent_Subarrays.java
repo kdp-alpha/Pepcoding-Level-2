@@ -34,7 +34,7 @@ class Main
     }
 }
 
-//tc O(n^2)
+//tc O(n^3)
 
 class Solution
 { 
