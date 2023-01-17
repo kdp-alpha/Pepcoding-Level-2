@@ -24,6 +24,30 @@ class Main{
     }
 }
 
+
+
+//subsequnce on string
+import java.util.*;
+public class MyClass {
+    public static ArrayList<String> al = new ArrayList<>();
+    public static void main(String args[]) {
+      String str = "abc";
+      helper(str,"");
+      System.out.println(al);
+    }
+    
+    public static void helper(String str,String ans){
+        if(str.length()==0){
+            al.add(ans);
+            return;
+        }
+        
+        helper(str.substring(1),ans + str.charAt(0));
+        
+        helper(str.substring(1),ans);
+    }
+}
+
 //tc O(2^n)
 // Space Complexity: 
 // O(n) , Because of the recursion stack.
